@@ -15,8 +15,8 @@ class TrackerController extends Controller
         $link = Tracking::whereShortUrl($value)
         ->first();
     if($link) {
-        $ip = '51.252.76.206';
-        // $ip = $request->ip();
+        // $ip = '51.252.76.206';
+        $ip = $request->ip();
         $location = GeoLocation::lookup($ip)->toArray();
         if(Agent::isDesktop()) {
             $device = 'desktop';
