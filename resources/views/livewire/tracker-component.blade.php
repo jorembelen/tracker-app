@@ -106,7 +106,7 @@
 
 @push('js')
 
-<script>
+{{-- <script>
     window.addEventListener('copy-to-clipboard', event => {
         const link = event.detail;
         navigator.clipboard.writeText(link)
@@ -116,6 +116,21 @@
             .catch((error) => {
                 console.error('Failed to copy value to clipboard:', error);
             });
+    });
+</script> --}}
+
+<script>
+    document.addEventListener('copy-to-clipboard', function (e) {
+        const textToCopy = e.detail;
+        const textarea = document.createElement('textarea');
+        textarea.value = textToCopy;
+        textarea.setAttribute('readonly', '');
+        textarea.style.position = 'absolute';
+        textarea.style.left = '-9999px';
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
     });
 </script>
 
