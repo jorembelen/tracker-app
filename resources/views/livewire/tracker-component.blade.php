@@ -66,6 +66,7 @@
                         <thead>
                            <tr>
                               <th scope="col">#</th>
+                              <th scope="col">IP Address</th>
                               <th scope="col">Device</th>
                               <th scope="col">City</th>
                               <th scope="col">Region</th>
@@ -78,6 +79,7 @@
                             @forelse ($locations as $location)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
+                                    <td>{{ $location->ip }}</td>
                                     <td>{{ $location->device }}</td>
                                     <td>{{ $location->city }}</td>
                                     <td>{{ $location->region }}</td>
