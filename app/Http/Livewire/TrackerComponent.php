@@ -43,7 +43,7 @@ class TrackerComponent extends Component
     public function submit()
     {
         $data = $this->validate([
-            'url' => 'required'
+            'url' => 'required|url'
         ]);
 
         $code = substr(str_shuffle("0123456789abcdefghijklmnopqrstvwxyz"), 0, 6);
