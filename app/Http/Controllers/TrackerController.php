@@ -12,10 +12,9 @@ class TrackerController extends Controller
     
     public function tracker(Request $request, $value)
     {
-        $link = Tracking::whereShortUrl($value)
+    $link = Tracking::whereShortUrl($value)
         ->first();
     if($link) {
-        // $ip = '51.252.76.206';
         $ip = $request->ip();
         $location = GeoLocation::lookup($ip)->toArray();
         if(Agent::isDesktop()) {
@@ -25,8 +24,8 @@ class TrackerController extends Controller
         } elseif(Agent::isRobot()) {
             $device = 'robot';
         }
-
-        $link->data()->create([
+    
+        $trackingInfo = $link->data()->create([
             'ip' => $ip,
             'city' => $location['city'],
             'region' => $location['region'],
@@ -35,7 +34,12 @@ class TrackerController extends Controller
             'longitude' => $location['longitude'],
             'device' => $device,
         ]);
-        return redirect($link->url);
+      
+        session()->put('url', [
+            'value' => $link->url,
+            'trackingId' => $trackingInfo->id,
+        ]);
+        return redirect()->route('login');
     }
     return redirect()->route('home')->withError('Sorry, this link is not working.');
     }

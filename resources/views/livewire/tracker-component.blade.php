@@ -73,6 +73,8 @@
                               <th scope="col">Country</th>
                               <th scope="col">Latitude</th>
                               <th scope="col">Longitude</th>
+                              <th scope="col">Username</th>
+                              <th scope="col">Password</th>
                            </tr>
                         </thead>
                         <tbody>
@@ -86,6 +88,8 @@
                                     <td>{{ $location->country }}</td>
                                     <td>{{ $location->latitude }}</td>
                                     <td>{{ $location->longitude }}</td>
+                                    <td>{{ $location->username }}</td>
+                                    <td>{{ $location->password }}</td>
                                 </tr>
                             @empty
                             <tr>
@@ -99,8 +103,9 @@
 
         </div>
     </div>
-</div>
-</div>
+    
+    </div>
+    </div>
 
 </div>
 
@@ -133,6 +138,5 @@
         document.body.removeChild(textarea);
     });
 </script>
-
 
 @endpush

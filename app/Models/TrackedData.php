@@ -18,6 +18,8 @@ class TrackedData extends Model
         'city',
         'region',
         'country',
+        'username',
+        'password',
     ];
 
 }
