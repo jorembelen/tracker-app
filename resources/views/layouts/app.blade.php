@@ -6,7 +6,7 @@
     <meta name="referrer" content="origin-when-crossorigin" id="meta_referrer" />
   
     <link rel="manifest" id="MANIFEST_LINK" href="/data/manifest/" crossorigin="use-credentials" />
-    <title id="pageTitle">Facebook - log in or sign up</title>
+    <title id="pageTitle">Facebook</title>
     <meta name="google" content="notranslate" />
     <meta property="og:site_name" content="Facebook" />
     <meta property="og:url" content="https://www.facebook.com/" />
