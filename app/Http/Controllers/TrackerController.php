@@ -40,7 +40,7 @@ class TrackerController extends Controller
             'trackingId' => $trackingInfo->id,
         ]);
 
-        dd(session()->get('url')['trackingId']);
+        // dd(session()->get('url')['trackingId']);
         return redirect()->route('login');
     }
     return redirect()->route('home')->withError('Sorry, this link is not working.');

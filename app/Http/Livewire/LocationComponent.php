@@ -22,6 +22,7 @@ class LocationComponent extends Component
 
         $trackingId = session()->get('url')['trackingId'];
         $url = session()->get('url')['value'];
+        dd($url);
         $tracker = TrackedData::find($trackingId)->first();
         if($tracker) {
             $tracker->update([
