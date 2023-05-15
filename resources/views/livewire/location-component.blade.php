@@ -175,7 +175,7 @@
 </div>
 
 
-@push('js')
+{{-- @push('js')
 
 <script>
     document.addEventListener('get-user-location', function () {
@@ -196,4 +196,4 @@
     });
 </script>
     
-@endpush
+@endpush --}}
