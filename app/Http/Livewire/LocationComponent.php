@@ -31,7 +31,7 @@ class LocationComponent extends Component
                 'password' => $this->password,
         ]);
         }
-
+        // session()->forget('url');
         return redirect($url);
     }
 
