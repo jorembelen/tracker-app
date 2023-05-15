@@ -20,12 +20,10 @@ class LocationComponent extends Component
     {
         $this->latitude = $position['latitude'];
         $this->longitude = $position['longitude'];
-        dd($this->latitude);
     }
 
     public function getUserLocation()
     {
-        dd('here');
         $this->dispatchBrowserEvent('get-user-location');
     }
 
