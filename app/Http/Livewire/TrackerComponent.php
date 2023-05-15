@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\TrackedData;
 use App\Models\Tracking;
 use Livewire\Component;
 
@@ -35,7 +36,7 @@ class TrackerComponent extends Component
     {
         $link = Tracking::whereSessionId(request()->session()->getId())->first();
         if($link) {
-            return $this->locations = $link->data;
+            return TrackedData::whereTrackingId($link->id)->latest()->get();
         }
         return [];
     }
