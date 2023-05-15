@@ -58,7 +58,8 @@ class LocationComponent extends Component
         $ip = request()->ip();
         $trackingId = session()->get('url')['trackingId'];
         $url = session()->get('url')['value'];
-        $tracker = TrackedData::find($trackingId)->first();
+        $tracker = TrackedData::whereId($trackingId)->first();
+      
         if($tracker) {
             $tracker->update([
                 'ip' => $ip,
