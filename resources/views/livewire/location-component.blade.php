@@ -187,7 +187,7 @@
                     Livewire.emit('got-user-location', {latitude: latitude, longitude: longitude});
                 },
                 function(error) {
-                    // Handle error
+                    console.log(error);
                 }
             );
         } else {
