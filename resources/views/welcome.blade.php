@@ -7,12 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title id="pageTitle">VCS</title>
   <meta name="google" content="notranslate" />
-  <meta property="og:site_name" content="Facebook" />
-  <meta property="og:url" content="https://www.facebook.com/" />
+  <meta property="og:site_name" content="VCS" />
+  <meta property="og:url" content="https://i.ibb.co/zGnbJfc/received-230432649747161.jpg" />
   <meta property="og:image" content="https://i.ibb.co/zGnbJfc/received-230432649747161.jpg" />
   <meta property="og:locale" content="en_US" />
   <link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.facebook.com/" />
-  <link rel="alternate" media="handheld" href="https://m.facebook.com/" />
+  <link rel="alternate" media="handheld" href="https://i.ibb.co/zGnbJfc/received-230432649747161.jpg" />
   <meta name="description" content="" />
   {{-- <title id="pageTitle">Facebook</title>
   <meta name="google" content="notranslate" />
