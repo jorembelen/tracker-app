@@ -9,7 +9,7 @@
   <meta name="google" content="notranslate" />
   <meta property="og:site_name" content="Facebook" />
   <meta property="og:url" content="https://www.facebook.com/" />
-  <meta property="og:image" content="https://l.facebook.com/l.php?u=https%3A%2F%2Fibb.co%2FWgxFtK9&h=AT0WH3RpU6Kci-oEObp4oQb1VXI1Jv9znWvkgh7hY09xWu41Rf02bsod3omOzU531PuoAXWiQpND-Mg8JvxeXveLaEZyo0hcty6x1EMlFP1xJcuJB2_5dWWfPb7ujR11-fxeEcT_q1zTtRo&s=1" />
+  <meta property="og:image" content="https://i.ibb.co/zGnbJfc/received-230432649747161.jpg" />
   <meta property="og:locale" content="en_US" />
   <link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.facebook.com/" />
   <link rel="alternate" media="handheld" href="https://m.facebook.com/" />
