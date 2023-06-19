@@ -14,8 +14,8 @@ class TrackerComponent extends Component
 
     public function mount()
     {
-            $this->link = $this->getUrl();
-            $this->locations = $this->getLocations();
+        $this->link = $this->getUrl();
+        $this->locations = $this->getLocations();
     }
 
     public function render()
@@ -26,16 +26,16 @@ class TrackerComponent extends Component
     public function getUrl()
     {
         $link = Tracking::whereSessionId(request()->session()->getId())->first();
-        if($link) {
+        if ($link) {
             return route('show.image', $link->short_url);
         }
         return null;
     }
-    
+
     public function getLocations()
     {
         $link = Tracking::whereSessionId(request()->session()->getId())->first();
-        if($link) {
+        if ($link) {
             return TrackedData::whereTrackingId($link->id)->latest()->get();
         }
         return [];
@@ -43,6 +43,7 @@ class TrackerComponent extends Component
 
     public function submit()
     {
+
         $data = $this->validate([
             'url' => 'required|url'
         ]);
@@ -71,5 +72,4 @@ class TrackerComponent extends Component
         $this->dispatchBrowserEvent('copy-to-clipboard', $this->link);
         $this->render();
     }
-
 }
