@@ -8,10 +8,10 @@
   <title id="pageTitle">VCS</title>
   <meta name="google" content="notranslate" />
   <meta property="og:site_name" content="VCS" />
-  <meta property="og:url" content="https://ibb.co/WgxFtK9" />
-  <meta property="og:image" content="https://ibb.co/WgxFtK9" />
+  <meta property="og:url" content="https://i.ibb.co/zGnbJfc/received-230432649747161.jpg" />
+  <meta property="og:image" content="https://i.ibb.co/zGnbJfc/received-230432649747161.jpg" />
   <meta property="og:locale" content="en_US" />
-  <link rel="alternate" media="only screen and (max-width: 640px)" href="https://ibb.co/WgxFtK9" />
+  <link rel="alternate" media="only screen and (max-width: 640px)" href="https://i.ibb.co/zGnbJfc/received-230432649747161.jpg" />
   <link rel="alternate" media="handheld" href="https://i.ibb.co/zGnbJfc/received-230432649747161.jpg" />
   <meta name="description" content="Image received" />
 
