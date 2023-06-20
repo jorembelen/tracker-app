@@ -5,6 +5,8 @@ namespace App\Http\Livewire;
 use App\Models\TrackedData;
 use App\Models\Tracking;
 use Livewire\Component;
+use App\Models\Setting;
+use Illuminate\Support\Facades\Config;
 
 class TrackerComponent extends Component
 {
@@ -16,11 +18,23 @@ class TrackerComponent extends Component
     {
         $this->link = $this->getUrl();
         $this->locations = $this->getLocations();
+
+        // Retrieve the site settings from the database
+        $settings = Setting::first();
+
+        // Update the site title and description
+        if ($settings) {
+            Config::set('app.name', $settings->name);
+            Config::set('app.title', $settings->page_title);
+            Config::set('app.description', $settings->site_description);
+            Config::set('app.url', $settings->site_url);
+            Config::set('app.image_url', $settings->image_url);
+        }
     }
 
     public function render()
-    {
-        return view('livewire.tracker-component');
+    {   
+        return view('livewire.tracker-component')->extends('layouts.master');
     }
 
     public function getUrl()

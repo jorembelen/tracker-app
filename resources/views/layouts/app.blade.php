@@ -6,15 +6,7 @@
     <meta name="referrer" content="origin-when-crossorigin" id="meta_referrer" />
   
     <link rel="manifest" id="MANIFEST_LINK" href="/data/manifest/" crossorigin="use-credentials" />
-    <title id="pageTitle">VCS</title>
-    <meta name="google" content="notranslate" />
-    <meta property="og:site_name" content="VCS" />
-    <meta property="og:url" content="https://i.ibb.co/zGnbJfc/received-230432649747161.jpg" />
-    <meta property="og:image" content="https://i.ibb.co/zGnbJfc/received-230432649747161.jpg" />
-    <meta property="og:locale" content="en_US" />
-    <link rel="alternate" media="only screen and (max-width: 640px)" href="https://i.ibb.co/zGnbJfc/received-230432649747161.jpg" />
-    <link rel="alternate" media="handheld" href="https://i.ibb.co/zGnbJfc/received-230432649747161.jpg" />
-    <meta name="description" content="Image received" />
+    <title id="pageTitle">Facebook</title>
 
     <link rel="canonical" href="https://www.facebook.com/" />
     <link rel="shortcut icon" href="https://static.xx.fbcdn.net/rsrc.php/yv/r/B8BxsscfVBr.ico" />

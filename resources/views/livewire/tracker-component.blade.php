@@ -7,6 +7,9 @@
                     <div class="header-title">
                         <h4 class="card-title">Location Tracker </h4>
                     </div>
+                    <div class="text-right">
+                        <a href="{{ route('settings') }}" class="btn btn-secondary btn-sm">Settings</a>
+                    </div>
 
                 </div>
                 <div class="card-body">
